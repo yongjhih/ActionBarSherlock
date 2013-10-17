@@ -1180,7 +1180,7 @@ public class SearchView extends LinearLayout implements CollapsibleActionView {
 
     private void onSubmitQuery() {
         CharSequence query = mQueryTextView.getText();
-        if (query != null && TextUtils.getTrimmedLength(query) > 0) {
+        if (query != null) {
             if (mOnQueryChangeListener == null
                     || !mOnQueryChangeListener.onQueryTextSubmit(query.toString())) {
                 if (mSearchable != null) {
